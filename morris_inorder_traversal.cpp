@@ -45,6 +45,7 @@ void morrisInorderTraversal(TreeNode *root) {
 
 int main() {
 
+    //creating tree
     TreeNode *root = new TreeNode(1);
     root->left = new TreeNode(2);
     root->right = new TreeNode(6);
@@ -54,6 +55,7 @@ int main() {
     root->right->left = new TreeNode(7);
     root->right->right = new TreeNode(8);
 
+    //doing morris inorder traversal
     cout << "Inorder: ";
     morrisInorderTraversal(root);
     cout << endl;
